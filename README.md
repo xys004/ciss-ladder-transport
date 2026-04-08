@@ -19,8 +19,12 @@ This repository is released under the [MIT License](/C:/Users/Nelson/Downloads/c
 
 - `legacy/`
   Preserved copies of the original scripts with normalized names.
+- `notebooks/ciss_ladder_transport_colab.ipynb`
+  Colab-ready tutorial notebook for staging Drive data and running the clean post-processing workflow.
 - `scripts/current_from_transmission.py`
   Clean local replacement for the Google Colab current-integration workflow.
+- `scripts/prepare_colab_data.py`
+  Helper for copying Google Drive CSV outputs into the repository's expected layout.
 - `src/ciss_ladder_transport/`
   Small reusable helpers for Landauer-type current integration.
 - `configs/`
@@ -47,6 +51,16 @@ The preserved scripts cover three main workflows:
 3. Use `scripts/current_from_transmission.py` plus a config file from `configs/` to compute current-vs-length tables locally, without Google Drive or Colab dependencies.
 4. Store processed outputs in `results/`.
 5. Tag a release and upload that release to Zenodo.
+
+## Google Colab
+
+The repository now includes a Colab-oriented entry point:
+
+- open in Colab: [ciss_ladder_transport_colab.ipynb](https://colab.research.google.com/github/xys004/ciss-ladder-transport/blob/main/notebooks/ciss_ladder_transport_colab.ipynb)
+- notebook: [notebooks/ciss_ladder_transport_colab.ipynb](/C:/Users/Nelson/Downloads/ciss-ladder-transport/notebooks/ciss_ladder_transport_colab.ipynb)
+- guide: [docs/google_colab.md](/C:/Users/Nelson/Downloads/ciss-ladder-transport/docs/google_colab.md)
+
+This path is intended for the documented post-processing workflow using transmission CSV files already produced by the research calculations.
 
 ## Expected raw-data layout
 
