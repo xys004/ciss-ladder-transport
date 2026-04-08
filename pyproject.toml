@@ -1,0 +1,30 @@
+[project]
+name = "ciss-ladder-transport"
+version = "0.1.0"
+description = "Green-function transport scripts for current-induced spin polarization in a two-chain ladder model."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "D. Verrilli" },
+  { name = "N. Bolivar" },
+]
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.10",
+  "pandas>=1.5",
+  "matplotlib>=3.7",
+  "numba>=0.57",
+]
+
+[project.scripts]
+ciss-current = "ciss_ladder_transport.landauer:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

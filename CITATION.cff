@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code archive, please cite the software record and the associated manuscript."
+title: "CISS Ladder Transport"
+type: software
+version: "0.1.0"
+date-released: 2026-04-08
+abstract: >-
+  Code archive for Green-function calculations of spin-polarized transport in
+  a minimal two-chain ladder model with chiral spin-orbit coupling,
+  inter-channel hybridization, dephasing, and static disorder.
+authors:
+  - family-names: "Verrilli"
+    given-names: "D."
+  - family-names: "Bolivar"
+    given-names: "N."
+preferred-citation:
+  type: article
+  title: "A Green Function Formalism for Current Induced Spin Polarization"
+  authors:
+    - family-names: "Verrilli"
+      given-names: "D."
+    - family-names: "Bolivar"
+      given-names: "N."
+  date-released: 2026-04-08

@@ -1,0 +1,32 @@
+{
+  "name": "dephasing_current_vs_length",
+  "output_dir": "../results/current",
+  "lengths": [10, 19, 28, 37, 46, 55, 64, 73, 82, 91],
+  "use_legacy_window": true,
+  "bias": 4.0,
+  "mu_l_up": 1.0,
+  "mu_r_up": -1.0,
+  "temperature": 1e-9,
+  "cases": [
+    {
+      "label": "eta_d=0.5",
+      "pattern": "../data/raw/dephasing/w05/data_decoheren_N{N}.csv",
+      "output_basename": "chain_cs_N_decoherence05"
+    },
+    {
+      "label": "eta_d=1.0",
+      "pattern": "../data/raw/dephasing/w/data_decoheren_N{N}.csv",
+      "output_basename": "chain_cs_N_decoherence1"
+    },
+    {
+      "label": "eta_d=2.0",
+      "pattern": "../data/raw/dephasing/w2/data_decoheren_N{N}.csv",
+      "output_basename": "chain_cs_N_decoherence2"
+    },
+    {
+      "label": "eta_d=0.0",
+      "pattern": "../data/raw/dephasing/coherent/data_N{N}.csv",
+      "output_basename": "chain_cs_N_without_decoherence"
+    }
+  ]
+}
