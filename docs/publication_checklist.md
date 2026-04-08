@@ -11,8 +11,7 @@ Use this list before making the repository public and linking it to Zenodo.
 
 ## Legal
 
-- Choose a software license before publication.
-- Confirm that all authors agree with the chosen license and repository contents.
+- Confirm that all authors agree with the chosen MIT License and repository contents.
 
 ## Scientific reproducibility
 
@@ -25,3 +24,4 @@ Use this list before making the repository public and linking it to Zenodo.
 - Review the `legacy/` copies one last time to ensure nothing relevant was omitted.
 - Add one example dataset if you want users to run the post-processing immediately after cloning.
 - Create a tagged release, then connect that release to Zenodo.
+- Review `.zenodo.json` and update affiliations, ORCIDs, and final wording if needed.

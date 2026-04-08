@@ -11,6 +11,10 @@ This repository organizes the Python scripts used to study spin-polarized transp
 - D. Verrilli, main contributor
 - N. Bolivar
 
+## License
+
+This repository is released under the [MIT License](/C:/Users/Nelson/Downloads/ciss-ladder-transport/LICENSE).
+
 ## What is included
 
 - `legacy/`
@@ -43,8 +47,6 @@ The preserved scripts cover three main workflows:
 3. Use `scripts/current_from_transmission.py` plus a config file from `configs/` to compute current-vs-length tables locally, without Google Drive or Colab dependencies.
 4. Store processed outputs in `results/`.
 5. Tag a release and upload that release to Zenodo.
-
-Note: this scaffold does not choose a software license automatically. That decision should be confirmed by the authors before the public release.
 
 ## Expected raw-data layout
 
@@ -104,6 +106,8 @@ In particular:
 ## Before publishing
 
 Use [docs/publication_checklist.md](/C:/Users/Nelson/Downloads/ciss-ladder-transport/docs/publication_checklist.md) before creating the public repository and Zenodo record.
+
+For the first tagged release, a draft note is available in [docs/release_notes_v0.1.0.md](/C:/Users/Nelson/Downloads/ciss-ladder-transport/docs/release_notes_v0.1.0.md).
 
 ## Citation
 

@@ -1,0 +1,25 @@
+{
+  "title": "CISS Ladder Transport",
+  "description": "Green-function transport archive for current-induced spin polarization in a two-chain ladder model with coherent, dephasing, and disorder workflows.",
+  "upload_type": "software",
+  "license": "mit-license",
+  "creators": [
+    {
+      "name": "Verrilli, D.",
+      "affiliation": "Escuela de Fisica, Universidad Central de Venezuela"
+    },
+    {
+      "name": "Bolivar, N.",
+      "affiliation": "Escuela de Fisica, Universidad Central de Venezuela"
+    }
+  ],
+  "keywords": [
+    "CISS",
+    "spin transport",
+    "Green functions",
+    "mesoscopic transport",
+    "tight-binding",
+    "dephasing",
+    "disorder"
+  ]
+}
