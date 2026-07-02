@@ -13,7 +13,7 @@ The primary spectral quantities in this repository are:
 
 The integrated spin current `I_z` is obtained afterward through a Landauer-type integration over energy. The repository separates coherent, disorder-averaged, and phenomenological dephasing workflows so that each regime can be audited independently.
 
-This model is intended to capture qualitative transport mechanisms in a minimal ladder setting. It should not be read as a claim of a brand-new microscopic implementation or as a quantitative reproduction of every experimental trend.
+**Important Numerical Finding (HISTORIA C):** A rigorous audit of this model has demonstrated that the previously reported spin-selective signals were numerical artifacts. The original code integrated an odd-symmetry spectral transmission $T^z(E)$ over an asymmetric energy window. When the integration bounds are properly symmetrized ($f_L(E) - f_R(E)$ on $[-2.0, 2.0]$ meV), the coherent and dephasing-assisted spin currents are shown to identically vanish. Consequently, this repository now serves as a documented baseline illustrating that chirality and phenomenological dephasing are insufficient to generate finite spin polarization in this specific two-terminal tight-binding framework.
 
 ## Repository Layout
 

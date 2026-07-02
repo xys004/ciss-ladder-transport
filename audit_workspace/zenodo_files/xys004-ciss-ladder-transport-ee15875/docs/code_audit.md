@@ -18,9 +18,9 @@ These notes summarize issues observed while organizing the original scripts into
 
 ## Numerical and software review findings
 
-- **Integration Bounds Artifact (CRITICAL)**: The original scripts employed an asymmetric Landauer integration window, effectively evaluating `[f_L(E) - f_R(E)]` over roughly `[-1.5, 2.5] meV` instead of symmetric `[-2.0, 2.0] meV`. Since the spectral transmission `T^z(E)` is essentially an odd function of energy `T^z(E) = -T^z(-E)`, integrating it asymmetrically was the sole cause of the finite spin-selective signal. When the bounds are properly symmetrized, the entire coherent and dephasing-assisted spin current $I_z$ rigorously vanishes to numerical zero.
 - In the transmission builders, `Dphi = 2*pi/(10-1)` is hardcoded. If this is meant to depend on chain geometry rather than fixed site count, it should be documented explicitly.
 - The disorder and dephasing scripts compute the average amplitude first and then square it in the final `Gz` expression. That may be intentional, but it is not the same as averaging `|T|^2` over realizations.
+- The current scripts use a chemical-potential convention that deserves confirmation before any physics rewrite. This repository keeps a legacy-compatible option for post-processing.
 - Many imports are unused, which makes dependency intent harder to read.
 - Names such as `list`, `i`, `eta01`, and `l_R12` reduce readability and, in some cases, shadow Python built-ins or appear unused.
 

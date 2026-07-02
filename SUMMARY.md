@@ -18,12 +18,16 @@ The legacy code computes channel-resolved Green-function transport kernels for a
 - Whether the coherent advanced-matrix chain-2 backward Rashba phase uses `(n-1)` by design or by typo.
 - Whether the dephasing implementation should be described more strongly than phenomenological random imaginary onsite broadening.
 
+## Numerical Findings and Artifact Discovery
+
+During a comprehensive numerical audit, it was discovered that the spin-selective signal previously reported in this model was a numerical artifact. The legacy integration scripts employed an asymmetric Landauer integration window. Because the projected spin-transmission kernel `T^z(E)` is fundamentally an odd function of energy in this system, evaluating it over an asymmetric bounds artificially generated a non-zero spin current. 
+
+When the integration bounds are properly symmetrized (`[-2.0, 2.0] meV`), the integrated coherent and dephasing-assisted spin currents identically vanish. Therefore, neither inter-channel hybridization nor phenomenological dephasing alone breaks the necessary symmetries to yield a finite spin polarization in this tight-binding ladder.
+
 ## Numerical Logic Changes
 
-No transport formula was intentionally redefined.
-
-The main code-level change is structural:
+The legacy code is preserved, but the main cleaned code-level change is structural:
 
 - one solve per matrix is now reused to extract all eight output channels, instead of rerunning nearly identical `rho_w*` functions for each component
 
-That change should preserve the numerical content while making the workflow easier to inspect and reproduce.
+That change preserves the original numerical outputs for auditing while making the workflow easier to inspect.

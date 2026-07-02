@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/c/Users/Nelson/OneDrive/Desktop/ASTRA_Personal_Auto/workspace/**)",
+      "Bash(wsl sage *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(wsl ls *)",
+      "Bash(wsl --exec bash -c \"ls /mnt/c/Users/Nelson/\")",
+      "Bash(wsl --exec bash -c \"ls '/mnt/c/Users/Nelson/OneDrive/Desktop/ASTRA_Personal_Auto/workspace/iter_003/'\")",
+      "Bash(wsl --exec bash -c \"cd '/mnt/c/Users/Nelson/OneDrive/Desktop/ASTRA_Personal_Auto/workspace/iter_003' && sage 02_code.py\")",
+      "Bash(echo \"EXIT_CODE:$?\")",
+      "Bash(wsl --exec bash -c \"sage --version\")",
+      "Bash(wsl --exec bash -c \"cd '/mnt/c/Users/Nelson/OneDrive/Desktop/ASTRA_Personal_Auto/workspace/iter_003' && sage 02_code.py 1>/tmp/sage_stdout.txt 2>/tmp/sage_stderr.txt\")",
+      "Bash(wsl --exec bash -c \"cat /tmp/sage_stdout.txt\")",
+      "Bash(wsl --exec bash -c \"cat /tmp/sage_stderr.txt\")",
+      "Read(//c/Users/Nelson/Desktop//**)",
+      "Read(//c/Users/Nelson/Desktop/**)",
+      "Bash(cmd.exe /c \"dir C:\\\\Users\\\\Nelson\\\\Desktop /b 2>&1\")",
+      "PowerShell(\\(Get-Item \"C:\\\\Users\\\\Nelson\\\\OneDrive\\\\Desktop\\\\ASTRA_Production\\\\dist\\\\ASTRUM-Production-v0.1.4.zip\"\\).Length / 1MB | ForEach-Object { \"{0:N2} MB\" -f $_ })"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "disorder_current_vs_length",
+  "output_dir": "../results/current",
+  "lengths": [10, 19, 28, 37, 46, 55, 64, 73, 82, 91],
+  "use_legacy_window": true,
+  "bias": 4.0,
+  "mu_l_up": 1.0,
+  "mu_r_up": -1.0,
+  "temperature": 1e-13,
+  "cases": [
+    {
+      "label": "W=0.5",
+      "pattern": "../data/raw/disorder/w05/data_disorder_N{N}.csv",
+      "output_basename": "chain_cs_N_disorder05"
+    },
+    {
+      "label": "W=1.0",
+      "pattern": "../data/raw/disorder/w/data_disorder_N{N}.csv",
+      "output_basename": "chain_cs_N_disorder1"
+    },
+    {
+      "label": "W=2.0",
+      "pattern": "../data/raw/disorder/w2/data_disorder_N{N}.csv",
+      "output_basename": "chain_cs_N_disorder2"
+    },
+    {
+      "label": "W=0.0",
+      "pattern": "../data/raw/disorder/coherent/data_N{N}.csv",
+      "output_basename": "chain_cs_N_without_disorder"
+    }
+  ]
+}

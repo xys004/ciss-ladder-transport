@@ -1,0 +1,172 @@
+\PassOptionsToPackage{colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}{hyperref}
+\documentclass[aps,prb,10pt,superscriptaddress,showkeys,twocolumn,floatfix]{revtex4-1}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage[toc,page]{appendix}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{physics}
+\usepackage{adjustbox}
+\usepackage{bbm}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+
+% Green-marked edits for the current resubmission pass
+\NewDocumentCommand{\addedG}{+m}{{\color{ForestGreen}#1}}
+\NewDocumentCommand{\deletedG}{+m}{{\color{red}\sout{#1}}}
+
+\newcommand{\gin}{\gamma_{\mathrm{in}}}
+\newcommand{\gout}{\gamma_{\mathrm{out}}}
+
+\makeatletter
+\def\@bibdataout@aps{%
+ \immediate\write\@bibdataout{%
+  @CONTROL{%
+   apsrev41Control,author="09",editor="0",pages="0",title="",year="1"%
+  }%
+ }%
+ \if@filesw
+  \immediate\write\@auxout{\string\citation{apsrev41Control}}%
+ \fi
+}
+\makeatother
+\pdfsuppresswarningpagegroup=1
+\emergencystretch=2em
+\hbadness=10000
+\hfuzz=50pt
+
+\begin{document}
+\raggedbottom
+\sloppy
+
+\title{A Green Function Formalism for Current Induced Spin Polarization: Reevaluating Integration Artifacts in Chiral Ladders}
+
+\author{David Verrilli}
+\affiliation{Escuela de Física, Universidad Central de Venezuela, UCV. Código Postal 1050. Caracas, Venezuela}
+
+\author{Jorge Cardenas-Gamboa}
+\affiliation{Max Planck Institute for Chemical Physics of Solids, 01187 Dresden, Germany}
+
+\author{Nelson Bolívar}
+\email[]{nelson.e.bolivar@ucv.ve; nelson@astrumdrive.com}
+\affiliation{Escuela de Física, Universidad Central de Venezuela, UCV. Código Postal 1050. Caracas, Venezuela}
+\affiliation{Astrum Drive Technologies, Dallas Pkwy Unit 120 B, Frisco, 75034, TX, USA}
+
+\author{Mayra Peralta}
+\affiliation{Max Planck Institute for Chemical Physics of Solids, 01187 Dresden, Germany}
+
+\author{Claudia Felser}
+\affiliation{Max Planck Institute for Chemical Physics of Solids, 01187 Dresden, Germany}
+
+\author{José H. Garcia}
+\affiliation{Catalan Institute of Nanoscience and Nanotechnology (ICN2), CSIC and BIST, Campus UAB, Bellaterra, 08193 Barcelona, Spain}
+
+\author{Solmar Varela}
+\affiliation{Escuela de Física, Universidad Central de Venezuela, UCV. Código Postal 1050. Caracas, Venezuela}
+
+\date{\addedG{April 21, 2026}}
+
+\begin{abstract}
+\addedG{We present a minimal tight-binding ladder model with chiral spin-orbit coupling, inter-channel hybridization, static disorder, and phenomenological dephasing to investigate the transport mechanisms proposed to generate spin-selective signals in chiral conductors. Using analytical and numerical Green-function methods, we evaluate the charge-transmission kernel $T^{0}(E)$, the projected spin-transmission kernel $T^{z}(E)$, and the integrated spin current $I_z$. Crucially, we demonstrate that the previously reported spin-selective signal in this model was a numerical artifact of asymmetric integration bounds. When the Landauer integration window is properly symmetrized, the coherent and dephasing-assisted spin currents identically vanish. Consequently, we show that neither inter-channel hybridization nor phenomenological dephasing alone is sufficient to break the fundamental symmetries and yield a finite two-terminal spin polarization in this strictly linear, non-magnetic tight-binding ladder. Our revised framework serves as a rigorous, artifact-free baseline emphasizing the necessity of explicit symmetry-breaking mechanisms for modeling the Chiral-Induced Spin Selectivity (CISS) effect.}
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+The traditional control of spin transport in condensed matter systems has predominantly relied on magnetism. Landmark discoveries such as giant magnetoresistance (GMR) have revolutionized magnetic memory technologies and catalyzed the emergence of spintronics \cite{Baibich1988}. However, GMR-based devices typically require multilayer ferromagnetic structures, imposing scalability constraints and demanding materials with strong intrinsic magnetism. To circumvent these limitations, nonmagnetic routes to spin polarization, especially those based on spin-orbit coupling (SOC), have attracted substantial interest. Mechanisms such as the spin Hall effect and spin-orbit torques offer magnetic-field-free approaches to manipulate spin currents but typically require heavy elements to achieve significant SOC strength \cite{Manchon2019}.
+
+In contrast, chiral materials (organic molecules, solids, and interfaces) present a more abundant and environmentally friendly alternative. Despite their organic composition, substantial evidence suggests that these materials can generate spin-selective transport responses through the Chiral-Induced Spin Selectivity (CISS) effect \cite{Aiello2022}. Seminal experimental work has demonstrated that chiral molecules, such as DNA and peptides, act as spin filters, inducing spin-polarized electron transport even without external magnetic fields \cite{Ray1999,Xie2011,Kiran2016}. 
+
+Despite significant experimental progress, theoretical constraints have led to questions regarding the robustness and general applicability of the CISS effect. Bardarson's theorem \cite{Bardarson2008} argues that in single-orbital systems with time-reversal symmetry, electron propagation occurs in time-reversed pairs, precluding net spin current generation. Furthermore, Onsager's reciprocity theorem \cite{buttiker1986role,Jacquod2012} requires that transport coefficients be symmetric upon reversal of current flow, presenting a fundamental barrier to observing CISS within the linear response regime of two-terminal setups. Previously, it was suggested that certain conditions, such as inter-channel hybridization or environmental dephasing, might enable CISS to persist by circumventing these constraints \cite{Matityahu2016,Mena2024,Huisman2021}. 
+
+\addedG{In this work, we critically re-evaluate these claims using a minimal two-leg ladder tight-binding model equipped with chiral spin-orbit coupling and probe-like phenomenological dephasing. We aim to disentangle the respective roles of chirality, hybridization, and environmental broadening in the resulting transport kernels. A meticulous numerical audit of the model reveals that previously reported non-zero spin currents were entirely artifactual, stemming from an asymmetric displacement in the Landauer integration window.
+
+When the integration bounds are strictly symmetric around the Fermi level, we find that the integrated spin current identically vanishes. This holds true for the pure coherent ladder, the disordered system, and the system subjected to moderate or strong phenomenological dephasing. The spectral spin transmission $T^z(E)$ is shown to be an odd function of energy, $T^z(E) = -T^z(-E)$, enforcing a cancellation of the net spin current under any symmetric bias. We conclude that within this linear-response, two-terminal tight-binding framework, chirality and dephasing are insufficient to generate a macroscopic spin polarization without explicitly breaking fundamental symmetries.}
+
+\begin{figure}[htbp]
+    \centering 
+    \includegraphics[scale=0.39]{images/Fig1-modified.pdf}
+    \caption{Two linear chains A and B connected to two reservoirs L and R. $\gin$ denotes intra-chain hopping; $\gout$ denotes inter-chain hopping between nearest neighbors in A and B. The angular coordinates follow the convention used in the Hamiltonian, namely $\phi_{j,n,M}=\pm 2\pi n/(M-1)$, with the plus (minus) sign corresponding to chain A (B).}
+    \label{fig1:model_schematics}
+\end{figure}
+
+\section{Model and methods}
+
+We consider a two-leg tight-binding ladder connected to left and right electrodes. The total Hamiltonian includes longitudinal hopping along each chain, inter-chain hybridization, a chiral spin-orbit coupling term, coupling to external leads, and phenomenological dephasing terms that model environmental phase randomization. Unless otherwise stated, energies are measured in units of the longitudinal hopping amplitude $\gin=1.0$ meV.
+
+The complete Hamiltonian can be expressed as:
+\begin{equation}\label{hamiltonian}
+H= H_{\mathrm{in}}+ H_{\mathrm{out}}+ H_{\mathrm{soc}},
+\end{equation}
+where the intra-chain term is given by:
+\begin{equation}\label{hamiltonian_intra}
+\begin{split}
+H_{\mathrm{in}}
+= & \sum_{j=A,B}\sum_{\sigma,n}
+   \epsilon_{j,n}\,c^{\dagger}_{j,\sigma,n}c_{j,\sigma,n} \\
+  & + \gin \sum_{j=A,B}\sum_{\sigma,n}
+   \left(c^{\dagger}_{j,\sigma,n}c_{j,\sigma,n+1}+{\rm h.c.}\right).
+\end{split}
+\end{equation}
+The inter-chain interaction is defined by:
+\begin{equation}\label{hamiltonian_inter}
+H_{\mathrm{out}}
+= \gout \sum_{\sigma,n}
+  \left(c^{\dagger}_{A,\sigma,n}c_{B,\sigma,n} + {\rm h.c.}\right),
+\end{equation}
+characterized by the inter-chain hopping parameter $\gout$. Finally, the SOC term is given by:
+\begin{equation}\label{h_chain}
+\begin{split}
+H_{\mathrm{soc}}
+  ={}& \lambda_{\mathrm{soc}}\sum_{j=A,B}\sum_{n}\sum_{\sigma,\sigma'}
+    c_{j,\sigma,n}^{\dagger}
+    \big(\bm{s}_{\sigma,\sigma'}\cdot \hat{\bm{u}}_{j,n,M}\big) \\
+   &\times c_{j,\sigma',n+1}
+    + {\rm h.c.}
+\end{split}
+\end{equation}
+
+To evaluate quantum transport, the ladder is coupled to left and right wide-band reservoirs, treated as nonmagnetic leads within the standard Landauer--Büttiker framework \cite{Datta1995,Datta2005}. The absolute spin current along $z$ is defined as
+\begin{equation}
+I_{z}=\frac{e}{h}\int dE\,\mathrm{Tr}\!\left[T^{z}(E)\right]\left(f_{\mathrm{L}}(E)-f_{\mathrm{R}}(E)\right),
+\label{spin_current}
+\end{equation}
+where $T^{z}(E)$ encodes the projected spin-transmission kernel. We take the temperature to limit zero $k_B T \to 0$.
+
+\addedG{\emph{Correction of Integration Artifacts.} In prior evaluations of Eq.~\eqref{spin_current}, an inadvertent asymmetric bias shift was introduced into the Fermi functions $f_{\mathrm{L}}$ and $f_{\mathrm{R}}$. This shifted the integration window such that it was no longer symmetric about $E=0$. Because the spectral transmission $T^{z}(E)$ is an odd function of energy in this model, integrating it over an asymmetric window artificially yields a non-zero spin current. In this work, we strictly enforce symmetric bias conditions $\mu_L = +V/2$ and $\mu_R = -V/2$, restoring the theoretically mandated cancellation.}
+
+\section{Results}
+
+\par\medskip
+\noindent\refstepcounter{figure}\label{spinconductance_fordifferencurrentflows}
+\centering\includegraphics[scale=0.30]{images/Fig2-modified-TzE-only.pdf}\par
+\noindent\textbf{Figure~\thefigure.} \addedG{Spin-transmission kernel $T^{z}(E)$ as a function of energy for opposite propagation directions.} The system demonstrates a finite spectral response, but crucially, $T^{z}(E)$ is an odd function of energy.
+\par\medskip
+
+\addedG{Figure~\ref{spinconductance_fordifferencurrentflows} presents the projected spin-transmission kernel $T^{z}(E)$ for opposite propagation directions. While inter-channel hybridization and SOC do generate a spectral splitting, the strict antisymmetry $T^z(E) = -T^z(-E)$ guarantees that under a symmetric bias window, the net integral for the spin current is exactly zero. This holds fundamentally due to the underlying time-reversal and spatial symmetries of the tight-binding ladder, which remain unbroken by the linear response bias.}
+
+\par\medskip
+\noindent\refstepcounter{figure}\label{spinconductance_disorderdephasing}
+\centering\includegraphics[scale=0.35]{images/Fig4-modified-v2.pdf}\par
+\noindent\textbf{Figure~\thefigure.} \addedG{Integrated spin current $I_z$ (along $z$) versus system length $N$ evaluated with corrected, symmetric integration bounds. Both the coherent baseline and the dephasing-assisted current identically vanish (to numerical precision $\sim 10^{-16}$) across all tested lengths and dephasing strengths.}
+\par\medskip
+
+\addedG{Figure~\ref{spinconductance_disorderdephasing} illustrates the core correction of this study. Once the Landauer integration window is properly symmetrized, the integrated spin current $I_z$ falls to numerical noise, regardless of the system length $N$, the presence of static Anderson disorder $W$, or the inclusion of phenomenological dephasing $\eta_d$. This null result decisively refutes the premise that moderate dephasing unlocks or enhances a finite spin-selective signal in this specific framework. The signal observed in earlier iterations was an artifact of the misaligned integration bounds sampling the odd-symmetry spectral kernel asymmetrically.}
+
+\section{Conclusions}
+\addedG{We have critically re-evaluated a minimal chiral ladder model featuring spin-orbit coupling and phenomenological dephasing. Through a rigorous numerical audit, we demonstrated that the previously reported finite spin currents were numerical artifacts originating from asymmetric integration bounds in the Landauer formulation.
+
+Upon correcting the integration window to reflect symmetric bias conditions, we found that the integrated spin-selective signal strictly vanishes. This cancellation is enforced by the odd symmetry of the spin-transmission kernel $T^z(E) = -T^z(-E)$, a direct consequence of the model's unbroken symmetries in the linear-response two-terminal regime. 
+
+Our findings confirm that neither inter-channel hybridization nor phenomenological local dephasing are sufficient to circumvent Onsager reciprocity and generate a macroscopic spin polarization in this tight-binding ladder. Consequently, invoking the CISS effect requires incorporating explicit symmetry-breaking mechanisms—such as local magnetic exchanges, inelastic spin-flip scattering, or genuinely asymmetric multi-terminal geometries—which are absent in this minimal model. This work establishes a robust, artifact-free theoretical baseline for future explorations of spin selectivity in chiral systems.}
+
+\section*{Data Availability Statement}
+The corrected suite of Python codes used to simulate the Green's-function transport and generate the numerical results presented in this study is available on Zenodo \cite{VerrilliBolivar2026Zenodo} at \url{https://doi.org/10.5281/zenodo.19476819}.
+
+\bibliography{bibliography.bib}
+
+\end{document}
