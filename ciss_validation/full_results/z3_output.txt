@@ -1,0 +1,5 @@
+1 TRS & V!=0 & offdiag!=0: unsat
+2 offdiag=0 & V!=0 & |Du|^2!=|Dd|^2: unsat
+3 |Du|^2!=|Dd|^2 & V!=0 & offdiag=0: unsat
+4a |Du|^2!=|Dd|^2 & TRS: unsat
+4b |Du|^2!=|Dd|^2 & broken TRS: sat; model=[yd = 0, xd = 0, xu = -1, yu = 0]

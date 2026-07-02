@@ -1,0 +1,2 @@
+Wrote /mnt/data/ciss_validation/results/bias_scan_exact_vs_decoupled.csv
+Wrote /mnt/data/ciss_validation/results/bias_scan_polarization.png

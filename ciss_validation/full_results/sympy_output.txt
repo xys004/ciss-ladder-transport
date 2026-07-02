@@ -1,0 +1,5 @@
+C*Cdag =
+Matrix([[Du*conjugate(Du) + V**2, V*(Du + conjugate(Dd))], [V*(Dd + conjugate(Du)), Dd*conjugate(Dd) + V**2]])
+offdiag(0,1) = V*(Du + conjugate(Dd))
+offdiag under Dd=-Du* = 0
+decoupled-channel exact only in TRS limit

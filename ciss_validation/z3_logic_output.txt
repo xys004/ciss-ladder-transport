@@ -1,0 +1,10 @@
+=== Z3 logic audit ===
+TRS and V != 0 but offdiag != 0: unsat
+offdiag == 0 and V != 0 but |D_up|^2 != |D_down|^2: unsat
+|D_up|^2 != |D_down|^2 and V != 0 but offdiag == 0: unsat
+Hermiticity D2 = D1^* but violated component relation: unsat
+
+Interpretation:
+- The decoupled-channel cancellation follows from the Kramers/TRS condition.
+- If the model imposes unequal spin-flip magnitudes, the Schur off-diagonal term is necessarily nonzero for V != 0.
+- Therefore the exact 4x4 Green function is the safe main transport object in the TRS-broken regime.

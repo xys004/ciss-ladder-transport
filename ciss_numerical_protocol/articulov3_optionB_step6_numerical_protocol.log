@@ -1,0 +1,790 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.28)  29 APR 2026 23:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**articulov3_optionB_step6_numerical_protocol.tex
+(./articulov3_optionB_step6_numerical_protocol.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+(c:/texlive/2025/texmf-dist/tex/latex/revtex/revtex4-2.cls
+Document Class: revtex4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for
+ documentation)
+ Copyright (c) 2019 American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>
+ Version (4.2d--4.2f): Modified by Mark Doyle and Phelype Oleinik
+ .
+ltxutil[2022/06/05 4.2f utilities package (portions licensed from W. E. Baxter 
+web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 356.
+Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 417.
+\eqncolsep=\skip49
+Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 492.
+Class revtex4-2 Info: Repairing broken LateX \@sect on input line 814.
+\intertabularlinepenalty=\count197
+\@tbpen=\count198
+\@arstrutbox@hline=\box53
+Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1845.
+Class revtex4-2 Info: Making \typeout \long on input line 2110.
+ltxfront[2022/06/05 4.2f frontmatter package (AO,DPC,MD)]
+\c@affil=\count199
+\c@collab=\count266
+\absbox=\box54
+ltxgrid[2022/06/05 4.2f page grid package (portions licensed from W. E. Baxter 
+web at superscript.com)]
+\c@linecount=\count267
+\output@latex=\toks17
+\box@size@1=\box55
+\box@size@2=\box56
+\@protection@box=\box57
+\@topmark@saved=\toks18
+\footins@saved=\box58
+\footins@recovered=\box59
+\column@recovered=\box60
+\pagesofar=\box61
+\footsofar=\box62
+\pagegrid@col=\count268
+Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5676.
+\c@part=\count269
+\c@section=\count270
+\c@subsection=\count271
+\c@subsubsection=\count272
+\c@paragraph=\count273
+\c@subparagraph=\count274
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count275
+\fbox@1=\box63
+\c@table=\count276
+\fbox@2=\box64
+\c@video=\count277
+\fbox@4=\box65
+\@bibdataout=\write3
+\widetext@top=\box66
+\widetext@bot=\box67
+Class revtex4-2 Info: Selecting society aps on input line 7669.
+(c:/texlive/2025/texmf-dist/tex/latex/revtex/aps4-2.rtx
+File: aps4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for documentatio
+n)
+Class revtex4-2 Info: RevTeX society APS selected on input line 40.
+)
+Class revtex4-2 Info: Selecting journal prb on input line 7671.
+Class revtex4-2 Info: APS journal PRB selected on input line 7672.
+
+(c:/texlive/2025/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
+File: aps10pt4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for document
+ation)
+Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+)
+Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7676.
+
+(c:/texlive/2025/texmf-dist/tex/latex/revtex/revsymb4-2.sty
+Package: revsymb4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for docum
+entation)
+LaTeX Info: Redefining \REV@mathfrak on input line 128.
+))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen146
+)
+LaTeX Info: Redefining \text on input line 28.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen147
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count279
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count280
+\leftroot@=\count281
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count282
+\DOTSCASE@=\count283
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box68
+\strutbox@=\box69
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count284
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count285
+\dotsspace@=\muskip18
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
+\tag@help=\toks20
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
+\andhelp@=\toks21
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks22
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+))
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen157
+\ar@mcellbox=\box70
+\extrarowheight=\dimen158
+\NC@list=\toks25
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box71
+))
+(c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+LaTeX Info: Redefining \bm on input line 219.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+)
+(c:/texlive/2025/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count291
+\c@@ppsavesec=\count292
+\c@@ppsaveapp=\count293
+)
+(c:/texlive/2025/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup10
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip59
+\thm@postskip=\skip60
+\thm@headsep=\skip61
+\dth@everypar=\toks33
+)
+(c:/texlive/2025/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-03-26 L3 programming layer (loader) 
+
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count294
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+))
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+
+(c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count295
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(c:/texlive/2025/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box72
+)
+\tc@llx=\dimen159
+\tc@lly=\dimen160
+\tc@urx=\dimen161
+\tc@ury=\dimen162
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen163
+\adjbox@Height=\dimen164
+\adjbox@Depth=\dimen165
+\adjbox@Totalheight=\dimen166
+\adjbox@pwidth=\dimen167
+\adjbox@pheight=\dimen168
+\adjbox@pdepth=\dimen169
+\adjbox@ptotalheight=\dimen170
+
+(c:/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count296
+)
+(c:/texlive/2025/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box73
+\sift@deathcycles=\count297
+\@vwid@loff=\dimen171
+\@vwid@roff=\dimen172
+))
+(c:/texlive/2025/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2024/01/14 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen173
+\epsfysize=\dimen174
+)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xy.sty
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes,
+docmode, (c:/texlive/2025/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen175
+\Y@c=\dimen176
+\U@c=\dimen177
+\D@c=\dimen178
+\L@c=\dimen179
+\R@c=\dimen180
+\Edge@c=\toks36
+\X@p=\dimen181
+\Y@p=\dimen182
+\U@p=\dimen183
+\D@p=\dimen184
+\L@p=\dimen185
+\R@p=\dimen186
+\Edge@p=\toks37
+\X@origin=\dimen187
+\Y@origin=\dimen188
+\X@xbase=\dimen189
+\Y@xbase=\dimen190
+\X@ybase=\dimen191
+\Y@ybase=\dimen192
+\X@min=\dimen193
+\Y@min=\dimen194
+\X@max=\dimen195
+\Y@max=\dimen196
+\lastobjectbox@=\box74
+\zerodotbox@=\box75
+\almostz@=\dimen197
+ direction,
+\d@X=\dimen198
+\d@Y=\dimen199
+\K@=\count298
+\KK@=\count299
+\Direction=\count300
+\K@dXdY=\dimen256
+\K@dYdX=\dimen257
+\xyread@=\read2
+\xywrite@=\write4
+\csp@=\count301
+\quotPTK@=\dimen258
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks38
+\connectobjectbox@@=\box76
+ objects,
+\styletoks@=\toks39
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.7
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.8
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count302
+\crvpts@=\toks40
+\splinebox@=\box77
+\splineval@=\dimen259
+\splinedepth@=\dimen260
+\splinetol@=\dimen261
+\splinelength@=\dimen262
+ circles,
+\L@=\dimen263
+ loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen264
+ loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.8 loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.11 loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.14
+\Row=\count303
+\Col=\count304
+\queue@=\toks41
+\queue@@=\toks42
+\qcount@=\count305
+\qcount@@=\count306
+\matrixsize@=\count307
+ loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.11 loaded) loaded)
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xypdf.tex
+ Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
+Xy-pic pdf driver: `curve' extension support
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
+Xy-pic pdf driver: `frame' extension support
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
+Xy-pic pdf driver: `line' extension support
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
+Xy-pic pdf driver: `rotate' extension support
+(c:/texlive/2025/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
+(c:/texlive/2025/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write5
+
+Excluding comment 'comment')
+(c:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count308
+\multirow@dima=\skip63
+\bigstrutjot=\dimen265
+)
+(c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count309
+\calc@Bcount=\count310
+\calc@Adimen=\dimen266
+\calc@Bdimen=\dimen267
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count311
+\calc@Cskip=\skip66
+)
+(c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count312
+\l_MT_multwidth_dim=\dimen268
+\origjot=\skip67
+\l_MT_shortvdotswithinadjustabove_dim=\dimen269
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen270
+\l_MT_above_intertext_sep=\dimen271
+\l_MT_below_intertext_sep=\dimen272
+\l_MT_above_shortintertext_sep=\dimen273
+\l_MT_below_shortintertext_sep=\dimen274
+\xmathstrut@box=\box78
+\xmathstrut@dim=\dimen275
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 30.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 30.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 30.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 30.
+
+(./articulov3_optionB_step6_numerical_protocol.aux)
+\openout1 = `articulov3_optionB_step6_numerical_protocol.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count313
+\scratchdimen=\dimen276
+\scratchbox=\box79
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen277
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks44
+) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 30
+.
+
+(c:/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 30
+.
+
+(c:/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Package xypdf Info: Line width: 0.39998pt on input line 30.
+\openout3 = `articulov3_optionB_step6_numerical_protocolNotes.bib'.
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 64--65
+\OT1/cmr/m/n/10 con-straint. Guo and Sun in-tro-duced environment-
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 64--65
+\OT1/cmr/m/n/10 ap-proaches have em-pha-sized the role of vi-bra-tions,
+ []
+
+[1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 3514) in paragraph at lines 213--215
+[]\OT1/cmr/m/n/10 The Hamil-to-nian ma-trix el-e-ments are $\OML/cmm/m/it/10 H[
+] \OT1/cmr/m/n/10 =
+ []
+
+[3]
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 297
+.
+ (c:/texlive/2025/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [4] [5]
+Underfull \hbox (badness 1371) in paragraph at lines 555--557
+\OT1/cmr/m/n/10 10[]$, and fi-nal val-i-da-tion of top can-di-dates used
+ []
+
+
+Overfull \hbox (49.0211pt too wide) detected at line 581
+[]\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 P[
+]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 P[]\OM
+S/cmsy/m/n/10 j\OT1/cmr/m/n/10 ) [] [] [] [] [] [] \OML/cmm/m/it/10 :
+ []
+
+[6]
+
+LaTeX Warning: Reference `matrix2' on page 7 undefined on input line 608.
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 611--613
+\OT1/cmr/m/n/10 The spin-resolved trans-mis-sions are com-puted from
+ []
+
+<top_candidate_currents_vs_bias.png, id=43, 505.89pt x 317.988pt>
+File: top_candidate_currents_vs_bias.png Graphic file (type png)
+<use top_candidate_currents_vs_bias.png>
+Package pdftex.def Info: top_candidate_currents_vs_bias.png  used on input line
+ 653.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+<top_candidate_P_vs_bias.png, id=45, 505.89pt x 317.988pt>
+File: top_candidate_P_vs_bias.png Graphic file (type png)
+<use top_candidate_P_vs_bias.png>
+Package pdftex.def Info: top_candidate_P_vs_bias.png  used on input line 660.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+<top_candidate_transmission.png, id=46, 505.89pt x 317.988pt>
+File: top_candidate_transmission.png Graphic file (type png)
+<use top_candidate_transmission.png>
+Package pdftex.def Info: top_candidate_transmission.png  used on input line 669
+.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+[7]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 678.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 678.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+<scatter_absP_vs_chirality_score.png, id=52, 433.62pt x 317.988pt>
+File: scatter_absP_vs_chirality_score.png Graphic file (type png)
+<use scatter_absP_vs_chirality_score.png>
+Package pdftex.def Info: scatter_absP_vs_chirality_score.png  used on input lin
+e 696.
+(pdftex.def)             Requested size: 221.3985pt x 162.36096pt.
+<scatter_absP_vs_Itot.png, id=53, 433.62pt x 317.988pt>
+File: scatter_absP_vs_Itot.png Graphic file (type png)
+<use scatter_absP_vs_Itot.png>
+Package pdftex.def Info: scatter_absP_vs_Itot.png  used on input line 703.
+(pdftex.def)             Requested size: 221.3985pt x 162.36096pt.
+
+Underfull \hbox (badness 1400) in paragraph at lines 710--711
+\OT1/cmr/m/n/10 phase in-ver-sion, helicity-sign in-ver-sion, ex-change of
+ []
+
+[8 <./top_candidate_currents_vs_bias.png> <./top_candidate_P_vs_bias.png> <./to
+p_candidate_transmission.png> <./scatter_absP_vs_chirality_score.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 711.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 711.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+<top_P_plus_minus_vs_bias.png, id=61, 505.89pt x 317.988pt>
+File: top_P_plus_minus_vs_bias.png Graphic file (type png)
+<use top_P_plus_minus_vs_bias.png>
+Package pdftex.def Info: top_P_plus_minus_vs_bias.png  used on input line 744.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+<top_currents_both_chiralities.png, id=62, 505.89pt x 317.988pt>
+File: top_currents_both_chiralities.png Graphic file (type png)
+<use top_currents_both_chiralities.png>
+Package pdftex.def Info: top_currents_both_chiralities.png  used on input line 
+751.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+<top_transmission_plus.png, id=63, 505.89pt x 317.988pt>
+File: top_transmission_plus.png Graphic file (type png)
+<use top_transmission_plus.png>
+Package pdftex.def Info: top_transmission_plus.png  used on input line 758.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+<top_transmission_minus.png, id=64, 505.89pt x 317.988pt>
+File: top_transmission_minus.png Graphic file (type png)
+<use top_transmission_minus.png>
+Package pdftex.def Info: top_transmission_minus.png  used on input line 765.
+(pdftex.def)             Requested size: 221.3985pt x 139.16792pt.
+[9 <./scatter_absP_vs_Itot.png> <./top_P_plus_minus_vs_bias.png> <./top_current
+s_both_chiralities.png> <./top_transmission_plus.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 771.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 771.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+<scatter_absPmin_vs_chirality_score.png, id=72, 433.62pt x 317.988pt>
+File: scatter_absPmin_vs_chirality_score.png Graphic file (type png)
+<use scatter_absPmin_vs_chirality_score.png>
+Package pdftex.def Info: scatter_absPmin_vs_chirality_score.png  used on input 
+line 774.
+(pdftex.def)             Requested size: 221.3985pt x 162.36096pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
+[]\OT1/cmr/m/n/10 The an-a-lyt-i-cal decoupled-channel ex-pres-sion in
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 781--782
+\OT1/cmr/m/n/10 Eq. [] re-mains use-ful for un-der-stand-ing how a
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 781--782
+\OT1/cmr/m/n/10 spin-dependent hop-ping scale can pro-duce dif-fer-ent
+ []
+
+[10 <./top_transmission_minus.png> <./scatter_absPmin_vs_chirality_score.png>]
+Underfull \hbox (badness 4353) in paragraph at lines 796--797
+[]\OT1/cmr/m/n/10 A sub-se-quent tar-geted search did iden-tify for-
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 796--797
+\OT1/cmr/m/n/10 mal chirality-odd high-polarization can-di-dates un-der
+ []
+
+[11]
+No file articulov3_optionB_step6_numerical_protocol.bbl.
+[12] (./articulov3_optionB_step6_numerical_protocol.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10614 strings out of 469626
+ 153942 string characters out of 5475183
+ 617664 words of memory out of 5000000
+ 37195 multiletter control sequences out of 15000+600000
+ 643380 words of font info for 113 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,16n,77p,3274b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/Nelson/.texlive2025/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600
+pk><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/te
+xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/202
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/
+texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/20
+25/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texli
+ve/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on articulov3_optionB_step6_numerical_protocol.pdf (12 pages, 62
+5853 bytes).
+PDF statistics:
+ 179 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+
